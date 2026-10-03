@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Compilados (se generan con ./build.sh)
+TicoTV.app/
+Instalador/
+AppIcon.icns
+
+# Archivos locales del autor
+respaldos/
+LEEME-local.md
