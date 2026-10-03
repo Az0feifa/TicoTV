@@ -5,8 +5,8 @@
 <h1 align="center">TicoTV</h1>
 
 <p align="center">
-  <b>TV en vivo, películas y series gratis y legales en español, en una app nativa para Mac.</b><br>
-  Sin cuentas, sin suscripciones y sin rastreo.
+  <b>TV en vivo, películas y series en español reunidas en una app nativa para Mac.</b><br>
+  Sin cuenta de TicoTV, sin suscripción de TicoTV y sin telemetría propia.
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
   <img alt="macOS 14+" src="https://img.shields.io/badge/macOS-14%2B-black?logo=apple">
   <img alt="Swift" src="https://img.shields.io/badge/Swift-SwiftUI-orange?logo=swift">
   <img alt="Versión" src="https://img.shields.io/badge/versi%C3%B3n-5.0-blue">
-  <img alt="Licencia GPL-3.0-only" src="https://img.shields.io/badge/licencia-GPL--3.0--only-blue">
+  <img alt="Licencia" src="https://img.shields.io/badge/licencia-PolyForm%20Noncommercial%201.0.0-blue">
 </p>
 
 <p align="center">
@@ -28,162 +28,225 @@
 
 ## ¿Qué es TicoTV?
 
-TicoTV junta en un solo lugar el contenido **gratuito y legal** que ya publican servicios como Pluto TV, Plex, Samsung TV Plus y las propias televisoras. Así no hay que saltar entre páginas web, apps y listas de canales.
+TicoTV es una aplicación nativa para macOS que reúne en una sola interfaz distintas fuentes externas de contenido audiovisual disponible a través de Internet.
 
-La idea es simple: llegar a la casa, abrir una app y ver algo **en español** (latino, de España o subtitulado), con una experiencia parecida a Apple TV o Netflix, **sin pagar y sin recurrir a la piratería**.
+La aplicación puede consultar contenido y transmisiones procedentes de fuentes como Pluto TV, Plex, Samsung TV Plus, iptv-org, Internet Archive y transmisiones configuradas de distintas televisoras.
 
-### Lo que **no** es
-- **No** es una app pirata. No incluye listas de servicios de pago, ni "IPTV premium", ni nada que rompa protecciones anticopia (DRM).
-- **No** aloja ni redistribuye video. Cada transmisión viene directamente del servicio oficial que la publica, con sus anuncios incluidos. Así ese servicio sigue financiándose.
-- **No** pide cuentas, correo ni tarjeta, y **no** recopila datos. Todo (favoritos, historial, perfiles) se guarda únicamente en su Mac.
+TicoTV funciona como cliente: el dispositivo del usuario solicita los datos y las transmisiones directamente a infraestructura externa. El proyecto se publica gratuitamente para uso personal y otros usos no comerciales permitidos por su licencia.
+
+### Lo que TicoTV no hace
+
+TicoTV:
+
+- no opera servidores propios de video;
+- no vende suscripciones ni acceso a canales;
+- no proporciona credenciales de servicios de pago;
+- no elimina ni evade sistemas DRM;
+- no requiere una cuenta propia;
+- no incorpora sistemas propios de analítica o telemetría;
+- no almacena una copia permanente del contenido audiovisual de los proveedores.
+
+La disponibilidad de una fuente puede variar según el proveedor, la región, el momento y las condiciones técnicas del servicio.
 
 ---
 
 ## Fuentes de contenido
 
-Todas son **gratuitas**, **legales** y se filtran para mostrar contenido **en español o subtitulado al español**.
+| Fuente | Cómo se utiliza |
+|---|---|
+| **Pluto TV** | Consulta servicios de Pluto TV para catálogo, canales, guía y URLs de reproducción. |
+| **Plex** | Utiliza servicios de Plex con un identificador anónimo para consultar contenido disponible para ese cliente. |
+| **Samsung TV Plus** | Consulta un índice externo en i.mjh.nz y utiliza jmp2.uk para resolver determinadas URLs de reproducción. |
+| **Canales configurados** | Reproduce URLs asociadas a televisoras e instituciones desde infraestructura externa. |
+| **iptv-org** | Consulta playlists públicas que contienen enlaces a transmisiones externas. |
+| **Internet Archive** | Utiliza búsqueda y metadatos de Internet Archive para localizar material audiovisual. |
 
-| Fuente | Qué ofrece | Tipo |
-|---|---|---|
-| **Pluto TV** | ~190 canales en vivo con guía de programación, más películas y series a la carta | Oficial, gratis con anuncios |
-| **Plex** | ~90 canales en vivo en español, además de películas, series y telenovelas a la carta | Oficial, gratis con anuncios (token anónimo, sin cuenta) |
-| **Samsung TV Plus** | ~200 canales de España y canales latinos de EE. UU. | Oficial, gratis con anuncios |
-| **Canales oficiales** | Señales que publican las propias televisoras: Repretel 4 y 6 🇨🇷, RTVE (24h, TVE Internacional, Star TVE, La 1) 🇪🇸, DW Español, France 24 Español, Canal 22 y TV UNAM 🇲🇽, Canal Sur, Televisión Canaria, entre otras | Emisoras públicas y privadas |
-| **Canales abiertos** | Listas públicas de [iptv-org](https://github.com/iptv-org/iptv) por país (Costa Rica, México, España…) | Comunidad, solo señales abiertas |
-| **Cine clásico** | Películas de dominio público o Creative Commons de [Internet Archive](https://archive.org) | Dominio público |
+La inclusión de una fuente **no implica afiliación, patrocinio, aprobación ni asociación** entre TicoTV y el proveedor correspondiente.
 
-> El catálogo **se actualiza solo** cada 3 horas y cada vez que vuelve a la app. También puede actualizarlo con **⌘R**.
-> La disponibilidad depende de cada servicio y de la región. Desde Costa Rica, algunos canales de Samsung TV Plus están bloqueados por región. TicoTV los detecta y los oculta automáticamente.
+Los servicios externos mantienen sus propias condiciones, políticas, restricciones geográficas, marcas, licencias y derechos.
+
+Consulte [THIRD_PARTY.md](THIRD_PARTY.md) para más información.
 
 ---
 
 ## Funciones
 
-**Para ver**
-- 🏠 **Inicio** con un título destacado y filas por categoría, al estilo de Apple TV.
-- 🔎 **Búsqueda global** (⌘F) en canales, películas y series de todas las fuentes a la vez.
-- 📺 **En vivo**, con selector de fuente, categorías y **guía de programación** (qué dan *ahora* y qué viene *después*).
-- 🎬 **Películas** y 🎞️ **Series** con géneros, fichas, temporadas y episodios.
+### Para ver
 
-**Comodidad**
-- ⏯️ **Seguir donde quedó**: cada película o episodio continúa en el mismo minuto, con una barra de progreso en el póster.
-- ⏭️ **Siguiente episodio automático**: aviso con cuenta regresiva y botones *Ver ahora* o *Cancelar*.
-- 🌙 **Temporizador para dormir**: apaga en 15–90 minutos o al terminar el episodio.
-- 🗣️ **Idioma y subtítulos**: elige el audio y los subtítulos en español automáticamente cuando existen.
-- 📡 **AirPlay**: envía el video a un televisor compatible.
-- ⌨️ **Teclas multimedia** del teclado y **Centro de control** de macOS.
-- ➕ **Mi lista** para ver después, ⭐ **Favoritos** y 💡 **"Porque vio…"** con recomendaciones.
-- 👥 **Perfiles**: cada persona de la casa tiene su propio historial, Mi lista y "Seguir viendo".
+- 🏠 **Inicio** con contenido destacado y filas por categoría.
+- 🔎 **Búsqueda global** con ⌘F.
+- 📺 **Televisión en vivo** organizada por fuentes y categorías.
+- 🎬 **Películas** y 🎞️ **series** cuando la fuente correspondiente las ofrece.
+- 📋 **Guía de programación** en fuentes compatibles.
 
-**Atajos de teclado**
+### Comodidad
+
+- ⏯️ **Seguir donde quedó**.
+- ⏭️ **Siguiente episodio automático**.
+- 🌙 **Temporizador para dormir**.
+- 🗣️ Selección de **audio y subtítulos** cuando están disponibles.
+- 📡 **AirPlay**.
+- ⌨️ Compatibilidad con controles multimedia de macOS.
+- ➕ **Mi lista**.
+- ⭐ **Favoritos**.
+- 👥 **Perfiles locales**.
+- 💡 Recomendaciones locales basadas en el historial.
+
+### Atajos de teclado
 
 | Tecla | Acción |
 |---|---|
-| `espacio` | Pausa / reproduce |
-| `f` | Pantalla completa |
-| `esc` | Minimiza el reproductor / regresa |
-| `←` `→` | Retrocede o adelanta 10 s |
-| `n` | Siguiente episodio |
-| `⌘F` | Buscar |
-| `⌘R` | Actualizar catálogo |
-| `⌘1`–`⌘7` | Ir a cada sección |
+| espacio | Pausa / reproduce |
+| f | Pantalla completa |
+| esc | Minimiza el reproductor / regresa |
+| ← → | Retrocede o adelanta 10 s |
+| n | Siguiente episodio |
+| ⌘F | Buscar |
+| ⌘R | Actualizar catálogo |
+| ⌘1–⌘7 | Navegar entre secciones |
 
 ---
 
 ## Instalación
 
-### Opción 1: instalador listo (recomendado)
-1. Descargue **`TicoTV-5.0.dmg`** o **`TicoTV-5.0.pkg`** desde la sección [**Releases**](https://github.com/Az0feifa/TicoTV/releases).
-2. **.dmg**: ábralo y arrastre TicoTV a *Aplicaciones*. **.pkg**: doble clic → Continuar → Instalar.
-3. La primera vez, macOS puede decir que es de un *desarrollador no identificado*, porque la app no está firmada con un certificado pagado de Apple. En ese caso: **clic derecho sobre TicoTV → Abrir → Abrir**. Si no aparece la opción: *Configuración del Sistema → Privacidad y seguridad → Abrir igualmente*.
+### Opción 1: instalador listo
 
-**Verifique que el archivo no fue alterado** (opcional):
-```bash
-shasum -a 256 -c SHA256SUMS   # debe decir OK
-```
+1. Descargue TicoTV-5.0.dmg o TicoTV-5.0.pkg desde la sección **Releases**.
+2. Con el DMG, arrastre TicoTV a Aplicaciones. Con el PKG, siga el instalador.
+3. La app puede no estar firmada con un certificado comercial de Apple. Si macOS muestra una advertencia de desarrollador no identificado, utilice **clic derecho → Abrir → Abrir** o **Configuración del Sistema → Privacidad y seguridad → Abrir igualmente**.
+
+Para verificar los archivos:
+
+~~~bash
+shasum -a 256 -c SHA256SUMS
+~~~
 
 ### Opción 2: compilar desde el código
-Solo requiere las *Command Line Tools* de Apple, no hace falta Xcode completo:
-```bash
-xcode-select --install          # una sola vez
+
+~~~bash
+xcode-select --install
 git clone https://github.com/Az0feifa/TicoTV.git
 cd TicoTV
-./build.sh                      # crea TicoTV.app
-./build.sh --instaladores       # además genera .dmg, .pkg y SHA256SUMS en Instalador/
-open TicoTV.app
-```
+./build.sh
+~~~
 
-**Requisitos:** macOS 14 Sonoma o superior (Apple Silicon o Intel) y conexión a internet.
+Para generar instaladores:
+
+~~~bash
+./build.sh --instaladores
+~~~
+
+**Requisitos:** macOS 14 Sonoma o superior, Apple Silicon o Intel y conexión a Internet.
 
 ---
 
 ## Seguridad y privacidad
 
-TicoTV nació de un análisis de seguridad. Una app "gratuita" de IPTV para Android que circula en la región resultó estar ofuscada, con conexiones P2P/proxy ocultas y librerías de rastreo. TicoTV es la alternativa **limpia y transparente**: todo el código está aquí para que cualquiera lo revise.
+TicoTV utiliza App Sandbox de macOS y conexiones de red como cliente.
 
-| Protección | Qué significa para usted |
-|---|---|
-| **App Sandbox** | La app solo puede conectarse a internet como cliente. No puede leer sus archivos, ni usar la cámara o el micrófono, ni aceptar conexiones entrantes. |
-| **Hardened Runtime** | Impide que otro programa inyecte código o librerías en TicoTV. |
-| **Filtro de direcciones** | Se rechazan `file://`, `localhost`, las IPs de su red local (192.168.x, 10.x…), las credenciales en la URL y los esquemas raros. |
-| **Redirecciones vigiladas** | Si un servidor intenta desviar a la app hacia su red local, la conexión se corta antes de salir. Esto se probó contra un servidor real. |
-| **Servidores fijados por fuente** | Cada fuente solo acepta los dominios oficiales de su servicio (`*.pluto.tv`, `*.provider.plex.tv`, CDN de Samsung TV Plus…). Los tokens anónimos nunca se envían a terceros. |
-| **Datos remotos validados** | IDs, duraciones, listas M3U y cabeceras se validan y se limitan en tamaño. Un dato malicioso no puede cerrar la app ni inyectar nada. |
-| **Instalador .pkg sin scripts** | Solo copia la app a `/Applications`. Se publican sus sumas SHA-256. |
-| **Cero telemetría** | No hay analíticas ni cuentas. Sus datos se quedan en `~/Library/Containers/com.az0feifa.ticotv`. |
+El código incluye controles para rechazar o limitar, entre otros:
 
-El código pasó por varias revisiones con agentes de auditoría: SSRF, filtración de tokens, evasión de la fijación de servidores, inyección y posibles cierres provocados por datos remotos. Todos los hallazgos se corrigieron.
+- esquemas no esperados como file://;
+- localhost y direcciones privadas de red local;
+- redirecciones no permitidas en integraciones sensibles;
+- identificadores remotos no válidos;
+- respuestas excesivamente grandes;
+- envío de determinados tokens a hosts no previstos.
 
-**Riesgo residual documentado:** el índice de Samsung TV Plus se obtiene a través de un servicio comunitario ([i.mjh.nz](https://i.mjh.nz)). Si ese servicio fuera comprometido, podría cambiar *qué video* se reproduce en un canal, pero **no** acceder a su red, a sus archivos ni a ninguna cuenta.
+Estas medidas reducen riesgos técnicos concretos, pero no constituyen una garantía absoluta de seguridad.
 
-¿Encontró un problema de seguridad? Abra un [issue](https://github.com/Az0feifa/TicoTV/issues).
+### Sin telemetría propia
+
+TicoTV no incorpora un sistema propio de cuentas, analítica, publicidad, seguimiento ni telemetría.
+
+Favoritos, perfiles, historial y progreso se almacenan localmente en el Mac.
+
+Al consultar o reproducir contenido, el dispositivo sí se comunica con servicios externos. Esos servicios pueden recibir información habitual de una conexión de red y se rigen por sus propias políticas.
 
 ---
 
 ## Cómo está hecho
 
-App nativa en **Swift + SwiftUI + AVKit**, sin dependencias externas: no usa CocoaPods, ni SPM, ni librerías de terceros.
+TicoTV es una aplicación nativa construida con **Swift + SwiftUI + AVKit + Foundation**.
 
-```
-TicoTV.swift          Núcleo: modelo de canal, descargas con límites, filtros de seguridad, parser M3U
-Pluto.swift           Cliente oficial de Pluto TV (sesión, en vivo, a la carta, búsqueda, guía)
-Providers.swift       Protocolo común para fuentes + reglas de seguridad (isSafeID, pinnedURL)
-Prov_Plex.swift       Plex: canales en vivo y a la carta en español
-Prov_FAST.swift       Samsung TV Plus (España + Latino)
-Prov_Oficiales.swift  Señales oficiales de televisoras
-Prov_Registry.swift   Lista de fuentes activas (agregar una fuente = un archivo + una línea aquí)
-Model.swift           Estado de la app: navegación, catálogo, búsqueda, reproductor
-Features.swift        Perfiles, progreso, temporizador, guía, AirPlay, teclas multimedia, auto-actualización
-Components.swift      Tarjetas, filas, reproductor y controles
+Actualmente no utiliza CocoaPods ni paquetes externos de Swift Package Manager.
+
+~~~text
+TicoTV.swift          Núcleo, red, Internet Archive e iptv-org
+Pluto.swift           Integración con Pluto TV
+Providers.swift       Interfaz común para proveedores
+Prov_Plex.swift       Integración con Plex
+Prov_FAST.swift       Integración con Samsung TV Plus
+Prov_Oficiales.swift  Transmisiones configuradas de televisoras
+Prov_Registry.swift   Registro de proveedores
+Model.swift           Estado y navegación
+Features.swift        Perfiles, progreso y funciones adicionales
+Components.swift      Componentes visuales
 Views.swift           Pantallas
-icon.swift            Genera el ícono a partir de assets/logo-original.png
-build.sh              Compila, firma (ad-hoc + sandbox + hardened runtime) y crea instaladores
-```
-
-### Agregar una fuente nueva
-1. Cree `Prov_MiFuente.swift` con un `enum MiFuenteProvider: StreamProvider`.
-2. Cumpla las reglas de `Providers.swift`: solo HTTPS, `fetchCapped`, `pinnedURL` con los dominios oficiales, `isSafeID` en los IDs y **contenido gratuito, legal y en español**.
-3. Agregue `MiFuenteProvider.self` a `Prov_Registry.swift`.
+icon.swift            Generación del ícono
+build.sh              Compilación e instaladores
+~~~
 
 ---
 
-## Aviso legal
+## Agregar una fuente nueva
 
-TicoTV es un proyecto personal, gratuito y sin fines de lucro. **No está afiliado** a Pluto TV (Paramount), Plex Inc., Samsung, Internet Archive, iptv-org ni a ninguna televisora. Todas las marcas pertenecen a sus dueños.
+Los proveedores adicionales implementan StreamProvider.
 
-TicoTV no almacena, aloja ni redistribuye contenido: solo reproduce las transmisiones que cada servicio publica gratuitamente y de forma oficial, con sus anuncios. Si usted es titular de derechos de alguna señal y desea que se retire, abra un [issue](https://github.com/Az0feifa/TicoTV/issues) y se atenderá.
+Una nueva integración debe:
+
+1. utilizar las funciones de red seguras del proyecto;
+2. validar identificadores y URLs remotas;
+3. establecer límites de descarga;
+4. evitar enviar credenciales a dominios no previstos;
+5. revisar y respetar las condiciones aplicables al servicio externo utilizado.
+
+La incorporación técnica de una fuente no constituye por sí misma una declaración sobre los derechos de utilización del contenido de esa fuente.
+
+---
+
+## Contenido y servicios de terceros
+
+TicoTV es un proyecto independiente.
+
+TicoTV no posee ni reclama derechos sobre las películas, series, programas, señales, marcas, APIs, metadatos o infraestructura de terceros utilizados por la aplicación.
+
+La licencia de TicoTV se refiere al código y demás material original sobre el que el licenciante tiene derechos. **No relicencia contenido ni servicios pertenecientes a terceros.**
+
+La disponibilidad pública de una URL, API o transmisión no se presenta aquí como prueba de un derecho específico de reutilización comercial o redistribución.
+
+Consulte [THIRD_PARTY.md](THIRD_PARTY.md).
+
+---
+
+## Marcas
+
+TicoTV no está afiliado, patrocinado ni respaldado por Pluto TV, Paramount, Plex, Samsung, Internet Archive, iptv-org, Matt Huisman, jmp2.uk ni las televisoras o proveedores mencionados en el proyecto.
+
+Las marcas y nombres comerciales pertenecen a sus respectivos titulares y se mencionan para identificar las fuentes con las que interactúa la aplicación.
+
+---
 
 ## Créditos
 
 - Creado por **[Az0feifa](https://github.com/Az0feifa)**.
-- Listas de canales abiertos: [iptv-org](https://github.com/iptv-org/iptv).
-- Índice de canales FAST: [i.mjh.nz](https://i.mjh.nz) (Matt Huisman).
-- Cine clásico: [Internet Archive](https://archive.org).
+- Listas M3U: [iptv-org](https://github.com/iptv-org/iptv).
+- Índice Samsung TV Plus: [i.mjh.nz](https://i.mjh.nz).
+- Archivo multimedia: [Internet Archive](https://archive.org).
+- Streams, marcas y metadatos: sus respectivos proveedores.
+
+---
 
 ## Licencia
 
-Copyright © 2026 [Az0feifa](https://github.com/Az0feifa)
+El código original de TicoTV se distribuye bajo la **[PolyForm Noncommercial License 1.0.0](LICENSE)**.
 
-TicoTV es software libre, distribuido bajo la licencia **GNU General Public License v3.0 únicamente** (`SPDX-License-Identifier: GPL-3.0-only`). El texto completo está en [LICENSE](LICENSE).
+**SPDX:** PolyForm-Noncommercial-1.0.0
 
-En resumen: puede usar, estudiar, modificar y compartir TicoTV, incluso con fines comerciales. La condición es que, si distribuye la app o una versión modificada, debe publicar también el código fuente bajo esta misma licencia (GPL-3.0-only), conservar los avisos de autoría y de licencia, e indicar qué cambió. El software se entrega sin garantía.
+En términos generales, la licencia permite usos no comerciales, incluidas modificaciones y redistribución dentro de los términos de la licencia. **No concede una licencia para explotar comercialmente TicoTV.**
+
+Esto significa que TicoTV tiene **código fuente público (source-available)**, pero no se describe como “Open Source” bajo la definición de la Open Source Initiative, ya que esa definición exige permitir usos comerciales.
+
+La licencia de TicoTV no concede derechos sobre contenido, marcas, APIs, streams, imágenes, metadatos o servicios pertenecientes a terceros.
+
+Copyright © 2026 Az0feifa.
