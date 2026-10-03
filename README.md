@@ -21,6 +21,13 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/Az0feifa/TicoTV/releases/latest/download/TicoTV.dmg"><img alt="Descargar TicoTV para Mac" src="https://img.shields.io/badge/Descargar%20TicoTV%20para%20Mac-.dmg-2ea44f?style=for-the-badge&logo=apple&logoColor=white" height="44"></a>
+</p>
+<p align="center">
+  <sub>macOS 14 o superior · Apple Silicon e Intel · <a href="https://github.com/Az0feifa/TicoTV/releases/latest/download/TicoTV.pkg">Instalador .pkg</a> · <a href="#instalación">Cómo instalar</a></sub>
+</p>
+
+<p align="center">
   <img src="docs/captura-inicio.jpg" width="900" alt="Pantalla de inicio de TicoTV">
 </p>
 
@@ -109,17 +116,37 @@ Consulte [THIRD_PARTY.md](THIRD_PARTY.md) para más información.
 
 ## Instalación
 
-### Opción 1: instalador listo
+### Opción 1: descargar e instalar
 
-1. Descargue TicoTV-5.0.dmg o TicoTV-5.0.pkg desde la sección **Releases**.
-2. Con el DMG, arrastre TicoTV a Aplicaciones. Con el PKG, siga el instalador.
-3. La app puede no estar firmada con un certificado comercial de Apple. Si macOS muestra una advertencia de desarrollador no identificado, utilice **clic derecho → Abrir → Abrir** o **Configuración del Sistema → Privacidad y seguridad → Abrir igualmente**.
+**1. Descargue** (la descarga empieza al hacer clic):
 
-Para verificar los archivos:
+| Archivo | Uso |
+|---|---|
+| **[⬇️ TicoTV.dmg](https://github.com/Az0feifa/TicoTV/releases/latest/download/TicoTV.dmg)** | Recomendado. Se arrastra a Aplicaciones. |
+| [⬇️ TicoTV.pkg](https://github.com/Az0feifa/TicoTV/releases/latest/download/TicoTV.pkg) | Alternativa: instalador con «Continuar → Instalar». |
+
+**2. Instale:**
+- **DMG:** abra el archivo desde *Descargas* y arrastre **TicoTV** a la carpeta **Aplicaciones**.
+- **PKG:** doble clic → *Continuar* → *Instalar* → contraseña de la Mac.
+
+**3. Primera apertura** (solo una vez):
+La app puede no estar firmada con un certificado comercial de Apple. Si macOS muestra una advertencia de desarrollador no identificado:
+1. Abra la carpeta **Aplicaciones**.
+2. **Clic derecho** (o Control + clic) sobre **TicoTV** → **Abrir** → **Abrir**.
+3. Si no aparece *Abrir*: **Configuración del Sistema → Privacidad y seguridad → Abrir igualmente**.
+
+<details>
+<summary>Verificar los archivos (opcional)</summary>
+
+Descargue [SHA256SUMS](https://github.com/Az0feifa/TicoTV/releases/latest/download/SHA256SUMS) en la misma carpeta y ejecute en Terminal:
 
 ~~~bash
-shasum -a 256 -c SHA256SUMS
+cd ~/Downloads
+shasum -a 256 -c SHA256SUMS --ignore-missing
 ~~~
+
+Todas las versiones: [Releases](https://github.com/Az0feifa/TicoTV/releases).
+</details>
 
 ### Opción 2: compilar desde el código
 
