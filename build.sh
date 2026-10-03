@@ -1,5 +1,5 @@
 #!/bin/zsh
-# SPDX-License-Identifier: GPL-3.0-only
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 # Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 # Compila TicoTV.app (firmada con App Sandbox + Hardened Runtime)
 #   ./build.sh                 -> solo la app
@@ -27,6 +27,8 @@ if [ ! -f AppIcon.icns ] || [ assets/logo-original.png -nt AppIcon.icns ] || [ i
   iconutil -c icns "$T/AppIcon.iconset" -o AppIcon.icns; rm -rf "$T"
 fi
 cp AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
+# Incluye los términos de licencia dentro del bundle distribuido.
+cp LICENSE "$APP/Contents/Resources/LICENSE.txt"
 
 cat > "$APP/Contents/Info.plist" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
