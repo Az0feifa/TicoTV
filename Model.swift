@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 // Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // TicoTV — estado de la app: navegación, catálogo, búsqueda global y reproductor
 import SwiftUI
