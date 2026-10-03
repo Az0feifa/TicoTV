@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // TicoTV — registro de fuentes adicionales gratuitas y legales (en español o subtituladas).
 // Cada Prov_<Nombre>.swift define su enum y se agrega aquí.
 let allProviders: [any StreamProvider.Type] = [

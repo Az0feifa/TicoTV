@@ -17,7 +17,7 @@
   <img alt="macOS 14+" src="https://img.shields.io/badge/macOS-14%2B-black?logo=apple">
   <img alt="Swift" src="https://img.shields.io/badge/Swift-SwiftUI-orange?logo=swift">
   <img alt="Versión" src="https://img.shields.io/badge/versi%C3%B3n-5.0-blue">
-  <img alt="Licencia MIT" src="https://img.shields.io/badge/licencia-MIT-green">
+  <img alt="Licencia GPL-3.0-only" src="https://img.shields.io/badge/licencia-GPL--3.0--only-blue">
 </p>
 
 <p align="center">
@@ -182,4 +182,8 @@ TicoTV no almacena, aloja ni redistribuye contenido: solo reproduce las transmis
 
 ## Licencia
 
-[MIT](LICENSE) © 2026 Az0feifa
+Copyright © 2026 [Az0feifa](https://github.com/Az0feifa)
+
+TicoTV es software libre, distribuido bajo la licencia **GNU General Public License v3.0 únicamente** (`SPDX-License-Identifier: GPL-3.0-only`). El texto completo está en [LICENSE](LICENSE).
+
+En resumen: puede usar, estudiar, modificar y compartir TicoTV, incluso con fines comerciales. La condición es que, si distribuye la app o una versión modificada, debe publicar también el código fuente bajo esta misma licencia (GPL-3.0-only), conservar los avisos de autoría y de licencia, e indicar qué cambió. El software se entrega sin garantía.

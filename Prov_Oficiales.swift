@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // TicoTV — señales en vivo publicadas por las propias emisoras (verificadas 01/10/2026 desde Costa Rica).
 // Cada URL proviene del reproductor oficial de la emisora (ver `fuente`). Si una emisora cambia su URL,
 // el canal se marca como caído automáticamente y deja de mostrarse.

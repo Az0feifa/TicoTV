@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // TicoTV — Samsung TV Plus (FAST: TV en vivo gratuita y legal con anuncios), solo canales en español.
 //
 // Fuentes:

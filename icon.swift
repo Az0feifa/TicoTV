@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // Convierte el logo de Gerald (assets/logo-original.png) en un ícono de macOS 1024x1024
 // Uso: mkicon <logo.png> <salida.png>
 import AppKit
