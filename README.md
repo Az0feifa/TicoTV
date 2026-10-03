@@ -190,6 +190,10 @@ Favoritos, perfiles, historial y progreso se almacenan localmente en el Mac.
 
 Al consultar o reproducir contenido, el dispositivo sí se comunica con servicios externos. Esos servicios pueden recibir información habitual de una conexión de red y se rigen por sus propias políticas.
 
+### Reportar un problema de seguridad
+
+No lo publique como issue. Use el [reporte privado de vulnerabilidades](https://github.com/Az0feifa/TicoTV/security/advisories/new); más detalles en [SECURITY.md](SECURITY.md).
+
 ---
 
 ## Cómo está hecho
