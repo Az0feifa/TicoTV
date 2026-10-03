@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 // Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // TicoTV — funciones tipo Apple TV: seguir donde quedó, siguiente episodio, temporizador,
 // guía de programación, AirPlay, teclas multimedia, Mi lista, perfiles, recomendaciones,
