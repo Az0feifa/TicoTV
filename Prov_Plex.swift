@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 // Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // Plex (servicio oficial, gratuito y legal con anuncios) — canales en vivo + películas y series a la carta.
 // Solo API pública de Plex con usuario anónimo (sin cuenta). Se excluye todo lo marcado con DRM.
