@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 // Copyright (C) 2026 Az0feifa <https://github.com/Az0feifa>
 // TicoTV — registro de fuentes adicionales gratuitas y legales (en español o subtituladas).
 // Cada Prov_<Nombre>.swift define su enum y se agrega aquí.
